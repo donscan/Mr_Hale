@@ -6,12 +6,11 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use App\Study;
-
 class StudyController extends Controller
 {
-    public function study()
+    public function  create()
     {
-      return view('study');
+
     }
+
 }
