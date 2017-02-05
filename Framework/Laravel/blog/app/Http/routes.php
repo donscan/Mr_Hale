@@ -22,4 +22,19 @@ Route::get('/home', 'HomeController@index');
 
 Route::auth();
 
+Route::group(['get','post'],function(){
+    Route::get('index','StudyController@index');
+    Route::get('user','StudyController@user');
+});
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+
+Route::auth();
+
 Route::get('/home', 'HomeController@index');

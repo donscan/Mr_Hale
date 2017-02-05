@@ -8,9 +8,12 @@ use App\Http\Requests;
 
 class StudyController extends Controller
 {
-    public function  create()
+    public function index()
     {
-
+      return view('user.index');
     }
-
+    public function user()
+    {
+      return view('user.user');
+    }
 }
